@@ -9,7 +9,7 @@ import Hamburger from 'hamburger-react'
 import { useContext } from "react"
 import { Context } from "@/app/layout"
 const Navbar = () => {
-    const [isopen,setopen]= useContext(Context)
+    const [isopen,Setopen]= useContext(Context)
   return (
     <nav style={{position:'relative'}} className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
@@ -30,7 +30,10 @@ const Navbar = () => {
           variant="btn_dark_green"
         />
       </div>
-        <Hamburger toggled={isopen} toggle={setopen} />
+      <div className="ham">
+      <Hamburger toggled={isopen} toggle={Setopen} />
+      </div>
+        
           
     </nav>
   )

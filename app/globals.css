@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@media(min-width:1000px){
+  .side-nav , .ham{
+    display: none;
+    
+  }
+}
 .side-nav ul li{
   position: relative;
   padding: 30px 10px;

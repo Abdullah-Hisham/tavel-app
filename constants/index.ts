@@ -1,10 +1,10 @@
 // NAVIGATION
 export const NAV_LINKS = [
-  { href: '/', key: 'home', label: 'Home' },
-  { href: '/#guide', key: 'how_hilink_work', label: 'How Hilink Work?' },
-  { href: '/#features', key: 'services', label: 'Services' },
-  { href: '/#pricing', key: 'pricing ', label: 'Pricing ' },
-  { href: '/#contact_us', key: 'contact_us', label: 'Contact Us' },
+  { href: '/', key: 'home', label: 'الصفحه الرئيسيه' },
+  { href: '/#guide', key: 'guide', label: 'كيف نعمل' },
+  { href: '/#features', key: 'services', label: 'الخدمات' },
+  { href: '/#pricing', key: 'pricing ', label: 'الاسعار ' },
+  { href: '/#contact_خs', key: 'constact_us', label: 'راسلنا' },
 ];
 
 // CAMP SECTION
@@ -18,64 +18,64 @@ export const PEOPLE_URL = [
 // FEATURES SECTION
 export const FEATURES = [
   {
-    title: 'Real maps can be offline',
+    title: 'يمكن أن تكون الخرائط غير متصلة بالإنترنت',
     icon: '/map.svg',
     variant: 'green',
     description:
-      'We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location',
+      'نحن نقدم لك حلاً لتتمكن من استخدام تطبيقنا عند التسلق، نعم خرائط غير متصلة بالإنترنت يمكنك استخدامها في أي وقت حين لا توجد إشارة في الموقع',
   },
   {
-    title: 'Set an adventure schedule',
+    title: 'حدد جدولًا للمغامرة',
     icon: '/calendar.svg',
     variant: 'green',
     description:
-      "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
+      "جدولة مغامرة مع الأصدقاء. في أيام العطلات، هناك العديد من العروض المثيرة للاهتمام من Hilink. بهذه الطريقة، لن يكون هناك المزيد من النقاش",
   },
   {
-    title: 'Technology using augment reality',
+    title: 'تكنولوجيا باستخدام الواقع المعزز',
     icon: '/tech.svg',
     variant: 'green',
     description:
-      'Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection',
+    'تستخدم التكنولوجيا الواقع المعزز كدليل لمسار المشي لمسافات طويلة في الغابة إلى قمة الجبل. مدعوم بالفعل بأحدث التقنيات دون الحاجه لإتصال بالإنترنت',
+
   },
   {
-    title: 'Many new locations every month',
+    title: 'العديد من المواقع الجديدة كل شهر',
     icon: '/location.svg',
     variant: 'orange',
     description:
-      'Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing',
+      'الكثير من المواقع الجديدة كل شهر، لأن لدينا مجتمعًا عالميًا من المتسلقين الذين يشاركون أفضل تجاربهم في التسلق',
   },
 ];
 
 // FOOTER SECTION
 export const FOOTER_LINKS = [
   {
-    title: 'Learn More',
+    title: 'اعرف اكثر',
     links: [
-      'About Hilink',
-      'Press Releases',
-      'Environment',
-      'Jobs',
-      'Privacy Policy',
-      'Contact Us',
+      'عننا ',
+      'البيئة',
+      'الوظائف',
+      'حقوق الملكيه',
+      'راسلنا',
     ],
   },
   {
-    title: 'Our Community',
-    links: ['Climbing xixixi', 'Hiking hilink', 'Hilink kinthill'],
+    title: 'مجتمعنا',
+    links: ['التسلق', 'جولة على الأقدام'],
   },
 ];
 
 export const FOOTER_CONTACT_INFO = {
-  title: 'Contact Us',
+  title: 'راسلنا',
   links: [
-    { label: 'Admin Officer', value: '123-456-7890' },
-    { label: 'Email Officer', value: 'hilink@akinthil.com' },
+    { label: 'الإداره', value: '01095908407' },
+    { label: 'الإيميل', value: 'email@gmail.com' },
   ],
 };
 
 export const SOCIALS = {
-  title: 'Social',
+  title: 'وسائل التواصل',
   links: [
     '/facebook.svg',
     '/instagram.svg',

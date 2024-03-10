@@ -16,8 +16,8 @@ const Footer = () => {
             {FOOTER_LINKS.map((columns) => (
               <FooterColumn title={columns.title}>
                 <ul className="regular-14 flex flex-col gap-4 text-gray-30">
-                  {columns.links.map((link) => (
-                    <Link href="/" key={link}>
+                  {columns.links.map((link,i) => (
+                    <Link href="/" key={i}>
                       {link}
                     </Link>
                   ))}
@@ -27,10 +27,10 @@ const Footer = () => {
 
             <div className="flex flex-col gap-5">
               <FooterColumn title={FOOTER_CONTACT_INFO.title}>
-                {FOOTER_CONTACT_INFO.links.map((link) => (
+                {FOOTER_CONTACT_INFO.links.map((link,i) => (
                   <Link
                     href="/"
-                    key={link.label}
+                    key={i}
                     className="flex gap-4 md:flex-col lg:flex-row"
                   >
                     <p className="whitespace-nowrap">
@@ -47,8 +47,8 @@ const Footer = () => {
             <div className="flex flex-col gap-5">
               <FooterColumn title={SOCIALS.title}>
                 <ul className="regular-14 flex gap-4 text-gray-30">
-                  {SOCIALS.links.map((link) => (
-                    <Link href="/" key={link}>
+                  {SOCIALS.links.map((link,i) => (
+                    <Link href="/" key={i}>
                       <Image src={link} alt="logo" width={24} height={24} />
                     </Link>
                   ))}
@@ -59,7 +59,7 @@ const Footer = () => {
         </div>
 
         <div className="border bg-gray-20" />
-        <p className="regular-14 w-full text-center text-gray-30">2023 Hilink | All rights reserved</p>
+        <p className="regular-14 w-full text-center text-gray-30"> ٢٠٢٤ Hilink | كل الحقوق تعود لي</p>
       </div>
     </footer>
   )

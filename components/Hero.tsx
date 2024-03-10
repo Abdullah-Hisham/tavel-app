@@ -1,20 +1,8 @@
 import Image from 'next/image'
 import Button from './Button'
-import { Context } from '@/app/layout'
 import { useContext, useState, useEffect } from 'react'
 
 const Hero = () => {
-  const [rightt, setRightt] = useState(-300)
-  const [isOpen, setOpen] = useContext(Context)
-
-  useEffect(() => {
-    if (isOpen) {
-      setRightt(0)
-    } else {
-      setRightt(-300)
-    }
-  }, [isOpen])
-
   let style = {
     background: 'linear-gradient(135deg, #FFFFFF, #F0F0F0)', // لون متدرج من الأبيض إلى الرمادي الفاتح
     border: '1px solid #CCCCCC', // إضافة حدود للفروق بين العناصر
@@ -26,7 +14,7 @@ const Hero = () => {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-start',
-    right: `${rightt}px`,
+    right: `-300px`,
     padding: '20px',
     transition: '.5s',
     zIndex: 1
@@ -46,11 +34,11 @@ const Hero = () => {
           alt="camp"
           width={50}
           height={50}
-          className="absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]"
+          className="absolute right-[-5px] top-[-30px] w-10 lg:w-[50px]"
         />
-        <h1 className="bold-52 lg:bold-88">Putuk Truno Camp Area</h1>
+        <h1 className="bold-52 lg:bold-88">منطقة معسكر بوتوك ترونو</h1>
         <p className="regular-16 mt-6 text-gray-30 xl:max-w-[520px]">
-          We want to be on each of your journeys seeking the satisfaction of seeing the incorruptible beauty of nature. We can help you on an adventure around the world in just one app
+          نريد أن نكون في كل رحلة من رحلاتك بحثًا عن الرضا عند رؤية جمال الطبيعة غير القابل للفساد. يمكننا مساعدتك في مغامرة حول العالم في تطبيق واحد فقط
         </p>
 
         <div className="my-11 flex flex-wrap gap-5">
@@ -67,20 +55,20 @@ const Hero = () => {
           </div>
 
           <p className="bold-16 lg:bold-20 text-blue-70">
-            198k
-            <span className="regular-16 lg:regular-20 ml-1">Excellent Reviews</span>
+           ١٠٠٠
+            <span className="regular-16 lg:regular-20 ml-1">من التقيمات الممتازة</span>
           </p>
         </div>
 
         <div className="flex flex-col w-full gap-3 sm:flex-row">
           <Button 
             type="button" 
-            title="Download App" 
+            title="حمل التطبيق" 
             variant="btn_green" 
           />
           <Button 
             type="button" 
-            title="How we work?" 
+            title="كيف نعمل ؟" 
             icon="/play.svg"
             variant="btn_white_text" 
           />
@@ -92,32 +80,25 @@ const Hero = () => {
 
            <div className="flex flex-col">
             <div className="flexBetween">
-              <p className="regular-16 text-gray-20">Location</p>
+              <p className="regular-16 text-gray-20">الموقع</p>
               <Image src="/close.svg" alt="close" width={24} height={24} />
             </div>
-            <p className="bold-20 text-white">Aguas Calientes</p>
+            <p className="bold-20 text-white">مصر</p>
           </div>
 
           <div className="flexBetween">
             <div className="flex flex-col">
-              <p className="regular-16 block text-gray-20">Distance</p>
-              <p className="bold-20 text-white">173.28 mi</p>
+              <p className="regular-16 block text-gray-20">المسافه</p>
+              <p className="bold-20 text-white"> ١٧٣.٢٨ميل</p>
             </div>
             <div className="flex flex-col">
-              <p className="regular-16 block text-gray-20">Elevation</p>
-              <p className="bold-20 text-white">2.040 km</p>
+              <p className="regular-16 block text-gray-20">الارتفاع</p>
+              <p className="bold-20 text-white">٢.٠٤٠ كم</p>
             </div>
           </div>
         </div>
       </div>
-      {isOpen&&(<div style={style} className="side-nav">
-      <ul>
-        <li>Home</li>
-        <li>services</li>
-        <li>contact-us</li>
-
-      </ul>
-      </div>)}
+      
       
     </section>
   )

@@ -1,10 +1,10 @@
 // NAVIGATION
 export const NAV_LINKS = [
   { href: '/', key: 'home', label: 'الصفحه الرئيسيه' },
-  { href: '/#guide', key: 'guide', label: 'كيف نعمل' },
-  { href: '/#features', key: 'services', label: 'الخدمات' },
-  { href: '/#pricing', key: 'pricing ', label: 'الاسعار ' },
-  { href: '/#contact_خs', key: 'constact_us', label: 'راسلنا' },
+  { href: '/', key: 'guide', label: 'كيف نعمل' },
+  { href: '/', key: 'services', label: 'الخدمات' },
+  { href: '/', key: 'pricing ', label: 'الاسعار ' },
+  { href: '/', key: 'constact_us', label: 'راسلنا' },
 ];
 
 // CAMP SECTION

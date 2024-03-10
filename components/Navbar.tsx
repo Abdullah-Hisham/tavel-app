@@ -3,7 +3,7 @@ import { NAV_LINKS } from "@/constants"
 import Image from "next/image"
 import Link from "next/link"
 import Button from "./Button"
-import Sidenav from "./Sidenav"
+
 
 import Hamburger from 'hamburger-react'
 

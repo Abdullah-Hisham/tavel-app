@@ -7,6 +7,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      
       colors: {
         green: {
           50: '#30AF5B',
@@ -47,6 +48,7 @@ module.exports = {
       borderRadius: {
         '5xl': '40px',
       },
+      
     },
   },
   plugins: [],

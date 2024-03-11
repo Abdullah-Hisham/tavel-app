@@ -4,9 +4,6 @@ import Image from "next/image"
 import Link from "next/link"
 import Button from "./Button"
 
-
-import Hamburger from 'hamburger-react'
-
 const Navbar = () => {
     
   return (

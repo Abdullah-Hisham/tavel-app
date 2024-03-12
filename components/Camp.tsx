@@ -57,13 +57,13 @@ const Camp = () => {
           backgroundImage="bg-bg-img-1"
           title="Putuk Truno Camp"
           subtitle="Prigen, Pasuruan"
-          peopleJoined="50+ Joined"
+          peopleJoined="إنضم اكثر من ٥٠"
         />
         <CampSite 
           backgroundImage="bg-bg-img-2"
-          title="Mountain View Camp"
-          subtitle="Somewhere in the Wilderness"
-          peopleJoined="50+ Joined"
+          title="مخيم إطلالة الجبل"
+          subtitle="مكان ما في البريه"
+          peopleJoined="إنضم اكثر من ٥٠"
         />
       </div>
 

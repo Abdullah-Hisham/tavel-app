@@ -2,25 +2,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@media(min-width:1000px){
-  .side-nav , .ham{
-    display: none;
-    
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  
   direction: rtl;
 }
-
 html{
   scroll-behavior: smooth;
 }

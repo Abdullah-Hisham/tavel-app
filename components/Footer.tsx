@@ -9,21 +9,22 @@ const Footer = () => {
       <div className="padding-container max-container flex w-full flex-col gap-14">
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" className="mb-10">
-            <Image src="hilink-logo.svg" alt="logo" width={74} height={29}/>
+            <Image src="hilink-logo.svg" alt="logo" width={74} height={29} loading='lazy'/>
           </Link>
 
           <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
-            {FOOTER_LINKS.map((columns) => (
-              <FooterColumn title={columns.title}>
-                <ul className="regular-14 flex flex-col gap-4 text-gray-30">
-                  {columns.links.map((link,i) => (
-                    <Link href="/" key={i}>
-                      {link}
-                    </Link>
-                  ))}
-                </ul>
-              </FooterColumn>
-            ))}
+          {FOOTER_LINKS.map((columns, columnIndex) => (
+  <FooterColumn key={columnIndex} title={columns.title}>
+    <ul className="regular-14 flex flex-col gap-4 text-gray-30">
+      {columns.links.map((link, linkIndex) => (
+        <Link href="/" key={`${columnIndex}-${linkIndex}`}>
+          {link}
+        </Link>
+      ))}
+    </ul>
+  </FooterColumn>
+))}
+
 
             <div className="flex flex-col gap-5">
               <FooterColumn title={FOOTER_CONTACT_INFO.title}>

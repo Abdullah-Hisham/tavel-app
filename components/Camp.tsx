@@ -19,6 +19,7 @@ const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps)
             alt="map"
             width={28}
             height={28}
+            
           />
         </div>
         <div className="flex flex-col gap-1">
@@ -37,6 +38,7 @@ const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps)
               alt="person"
               width={52}
               height={52}
+              
             />
           ))}
         </span>
@@ -79,6 +81,7 @@ const Camp = () => {
             width={186}
             height={219}
             className="camp-quote"
+            loading="lazy"
           />
         </div>
       </div>

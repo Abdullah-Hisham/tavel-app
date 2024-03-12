@@ -8,11 +8,13 @@ const Features = () => {
       <div className="max-container padding-container relative w-full flex justify-end">
         <div className="flex flex-1 lg:min-h-[900px]" id ='img'>
           <Image
-            src="/phone.png"
+            src="/phone.webp"
             alt="phone"
             width={440}
             height={1000}
             className="feature-phone"
+            loading='lazy'
+            
           />
         </div>
 
@@ -24,6 +26,7 @@ const Features = () => {
               width={50}
               height={50}
               className="absolute right-[-5px] top-[-28px] w-10 lg:w-[50px]"
+              loading='lazy'
             />
             <h2 className="bold-40 lg:bold-64">مميزاتنا </h2>
           </div>
